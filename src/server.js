@@ -1,6 +1,6 @@
 import express from 'express';
 import cors from 'cors';
-import v1Routes from './routes';
+// import v1Routes from './routes';
 
 const app = express();
 
@@ -16,7 +16,7 @@ app.use(
 
 app.use(express.json());
 
-app.use(v1Routes);
+// app.use(v1Routes);
 
 // 404 error handler
 app.use((req, res, next) => {
@@ -32,3 +32,6 @@ app.use((err, req, res, next) => {
     }
   });
 });
+
+// listening
+app.listen(PORT, ()=> console.log(`App listening on port ${PORT}`));
