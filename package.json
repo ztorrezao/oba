@@ -4,7 +4,8 @@
   "description": "Chat whatsapp bot that searches using google API",
   "main": "index.js",
   "scripts": {
-    "start": "babel-node src/server.js"
+    "start": "babel-node src/server.js",
+    "public:server": "./ngrok http 3000"
   },
   "repository": {
     "type": "git",
